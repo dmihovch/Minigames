@@ -3,14 +3,18 @@
   import { symbol } from "../stores";
   import Tile from "./tile.svelte";
 
-  const dispatch = createEventDispatcher<{ click: string[] }>();
+  type StringArrayAndNumber = {
+    boardArr: string[];
+    id: number;
+  };
+  const dispatch = createEventDispatcher<{ click: StringArrayAndNumber }>();
 
   const tileSrc: string[] = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
 
   function onClick(event: CustomEvent<number>) {
     setSymbol();
     displaySymbol(event.detail);
-    dispatch("click", tileSrc);
+    dispatch("click", { boardArr: tileSrc, id: event.detail });
   }
 
   function setSymbol() {
