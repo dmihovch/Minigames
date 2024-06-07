@@ -7,4 +7,20 @@
   <a href="/tictactoe">TicTacToe</a>
 </nav>
 
-<slot />
+<div class="tv-shell">
+  <slot />
+</div>
+
+<style>
+  nav {
+    padding-bottom: 15px;
+  }
+  .tv-shell {
+    top: 10;
+    left: 0;
+    position: absolute;
+    background-color: rgb(40, 10, 10);
+    width: 100dvw;
+    height: 100dvh;
+  }
+</style>
