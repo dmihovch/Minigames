@@ -2,6 +2,7 @@
   import { createEventDispatcher } from "svelte";
   import { symbol } from "../stores";
   import Tile from "./tile.svelte";
+  import Controls from "./controls.svelte";
 
   type StringArrayAndNumber = {
     boardArr: string[];
@@ -44,6 +45,7 @@
   <Tile id={6} src={tileSrc[6]} on:click={onClick} />
   <Tile id={7} src={tileSrc[7]} on:click={onClick} />
   <Tile id={8} src={tileSrc[8]} on:click={onClick} />
+  <Controls></Controls>
 </div>
 
 <style>

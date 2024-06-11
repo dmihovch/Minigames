@@ -53,4 +53,4 @@
   }
 </script>
 
-<Board on:click={checkWinCondition} />
+<Board on:click={checkWinCondition}></Board>

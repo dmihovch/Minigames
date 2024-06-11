@@ -7,7 +7,7 @@
   <a href="/tictactoe">TicTacToe</a>
 </nav>
 
-<div class="tv-shell">
+<div class="play-area">
   <slot />
 </div>
 
@@ -15,12 +15,13 @@
   nav {
     padding-bottom: 15px;
   }
-  .tv-shell {
-    top: 10;
-    left: 0;
+  .play-area {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
     background-color: rgb(40, 10, 10);
-    width: 100dvw;
-    height: 100dvh;
+    width: 70dvw;
+    height: 85dvh;
   }
 </style>
