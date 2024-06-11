@@ -8,7 +8,9 @@
   export let id: number = 0;
 
   const dispatch = createEventDispatcher<{ click: number }>();
-
+  export function reset() {
+    isDisabled = false;
+  }
   function onClick() {
     dispatch("click", id);
     isDisabled = true;
