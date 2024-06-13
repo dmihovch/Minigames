@@ -24,5 +24,10 @@
     height: 200px;
     width: 200px;
     cursor: crosshair;
+    font-size: 100px;
+    color: white;
+  }
+  button:disabled {
+    background-color: blue;
   }
 </style>
